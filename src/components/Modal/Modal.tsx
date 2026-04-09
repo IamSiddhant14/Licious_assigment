@@ -5,10 +5,11 @@ import './Modal.css';
 interface ModalProps {
   open: boolean;
   onClose: () => void;
+  title?: string;
   children: ReactNode;
 }
 
-export function Modal({ open, onClose, children }: ModalProps) {
+export function Modal({ open, onClose, title, children }: ModalProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ export function Modal({ open, onClose, children }: ModalProps) {
     >
       <div className="modal-dialog">
           <div className="modal-header">
-            <h2 className="modal-title">{'Task'}</h2>
+            <h2 className="modal-title">{title ?? 'Task'}</h2>
             <button className="modal-close" onClick={onClose}>×</button>
           </div>
         <div className="modal-body">{children}</div>
