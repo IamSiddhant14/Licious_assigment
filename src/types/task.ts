@@ -10,5 +10,4 @@ export interface Task {
   dueDate: string;
   status: Status;
   createdAt: string;
-  order: number;
 }

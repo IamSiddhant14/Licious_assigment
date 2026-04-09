@@ -1,0 +1,76 @@
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field__label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.field__req {
+  color: var(--danger);
+}
+
+.field__input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.field__input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.field__input.has-error {
+  border-color: var(--danger);
+}
+
+.field__textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.field__error {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--danger);
+  margin-top: 4px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.task-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 480px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .task-form__actions {
+    flex-direction: column-reverse;
+  }
+
+  .task-form__actions .btn {
+    width: 100%;
+  }
+}
