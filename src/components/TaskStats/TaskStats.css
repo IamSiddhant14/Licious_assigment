@@ -20,16 +20,15 @@
   gap: 4px;
 }
 
-.stat-card__icon {
+.stat-card-icon {
   font-size: 1.5rem;
 }
 
-.stat-card__value {
+.stat-card-value {
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-primary);
 }
-
 
 .progress-row {
   display: flex;
@@ -41,7 +40,7 @@
   padding: 12px 16px;
 }
 
-.progress-row__label {
+.progress-row-label {
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -56,14 +55,14 @@
   overflow: hidden;
 }
 
-.progress-bar__fill {
+.progress-bar-fill {
   height: 100%;
   background: var(--accent);
   border-radius: 4px;
   transition: width 0.3s ease;
 }
 
-.progress-row__pct {
+.progress-row-pct {
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--accent);
@@ -76,11 +75,11 @@
     padding: 12px 8px;
   }
 
-  .stat-card__value {
+  .stat-card-value {
     font-size: 1.25rem;
   }
 
-  .stat-card__icon {
+  .stat-card-icon {
     font-size: 1.25rem;
   }
 }

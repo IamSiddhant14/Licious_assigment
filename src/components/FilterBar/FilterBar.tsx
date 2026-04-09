@@ -13,11 +13,11 @@ export function FilterBar({ status, priority, onStatusChange, onPriorityChange }
 
   return (
     <div className="filter-bar">
-      <div className="filter-bar__group">
-        <label htmlFor="fb-status" className="filter-bar__label">Status</label>
+      <div className="filter-bar-group">
+        <label htmlFor="fb-status" className="filter-bar-label">Status</label>
         <select
           id="fb-status"
-          className="filter-bar__select"
+          className="filter-bar-select"
           value={status}
           onChange={(e) => onStatusChange(e.target.value as Status | 'all')}
         >
@@ -27,11 +27,11 @@ export function FilterBar({ status, priority, onStatusChange, onPriorityChange }
         </select>
       </div>
 
-      <div className="filter-bar__group">
-        <label htmlFor="fb-priority" className="filter-bar__label">Priority</label>
+      <div className="filter-bar-group">
+        <label htmlFor="fb-priority" className="filter-bar-label">Priority</label>
         <select
           id="fb-priority"
-          className="filter-bar__select"
+          className="filter-bar-select"
           value={priority}
           onChange={(e) => onPriorityChange(e.target.value as Priority | 'all')}
         >
@@ -44,7 +44,7 @@ export function FilterBar({ status, priority, onStatusChange, onPriorityChange }
 
       {active && (
         <button
-          className="filter-bar__clear"
+          className="filter-bar-clear"
           onClick={() => { onStatusChange('all'); onPriorityChange('all'); }}
         >
           Clear filters

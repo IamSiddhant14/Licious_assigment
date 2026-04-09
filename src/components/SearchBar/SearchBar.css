@@ -7,14 +7,14 @@
   max-width: 400px;
 }
 
-.search-bar__icon {
+.search-bar-icon {
   position: absolute;
   left: 12px;
   font-size: 14px;
   pointer-events: none;
 }
 
-.search-bar__input {
+.search-bar-input {
   width: 100%;
   padding: 10px 36px 10px 38px;
   border: 1px solid var(--border-color);
@@ -24,16 +24,16 @@
   background: var(--bg-card);
 }
 
-.search-bar__input:focus {
+.search-bar-input:focus {
   outline: none;
   border-color: var(--accent);
 }
 
-.search-bar__input::placeholder {
+.search-bar-input::placeholder {
   color: var(--text-secondary);
 }
 
-.search-bar__clear {
+.search-bar-clear {
   position: absolute;
   right: 8px;
   background: none;
@@ -44,7 +44,7 @@
   border-radius: var(--radius);
 }
 
-.search-bar__clear:hover {
+.search-bar-clear:hover {
   background: var(--bg-secondary);
   color: var(--text-primary);
 }

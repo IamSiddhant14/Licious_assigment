@@ -3,31 +3,26 @@
   padding: 8px 0;
 }
 
-.confirm-dialog__icon {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
-}
-
-.confirm-dialog__title {
+.confirm-dialog-title {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 8px;
 }
 
-.confirm-dialog__msg {
+.confirm-dialog-msg {
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.5;
   margin-bottom: 24px;
 }
 
-.confirm-dialog__actions {
+.confirm-dialog-actions {
   display: flex;
   gap: 12px;
   justify-content: center;
 }
 
-.confirm-dialog__actions .btn {
+.confirm-dialog-actions .btn {
   min-width: 100px;
 }

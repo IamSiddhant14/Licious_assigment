@@ -5,20 +5,20 @@
   flex-wrap: wrap;
 }
 
-.filter-bar__group {
+.filter-bar-group {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.filter-bar__label {
+.filter-bar-label {
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text-primary);
   white-space: nowrap;
 }
 
-.filter-bar__select {
+.filter-bar-select {
   padding: 7px 10px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
@@ -29,13 +29,13 @@
   transition: border-color var(--transition);
 }
 
-.filter-bar__select:hover,
-.filter-bar__select:focus {
+.filter-bar-select:hover,
+.filter-bar-select:focus {
   border-color: var(--accent);
   outline: none;
 }
 
-.filter-bar__clear {
+.filter-bar-clear {
   padding: 7px 14px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
@@ -47,7 +47,7 @@
   transition: all var(--transition);
 }
 
-.filter-bar__clear:hover {
+.filter-bar-clear:hover {
   border-color: var(--accent);
   color: var(--text-primary);
 }
@@ -57,12 +57,12 @@
     gap: 8px;
   }
 
-  .filter-bar__group {
+  .filter-bar-group {
     flex: 1;
     min-width: 0;
   }
 
-  .filter-bar__select {
+  .filter-bar-select {
     flex: 1;
   }
 }

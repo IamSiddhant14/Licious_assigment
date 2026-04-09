@@ -4,7 +4,7 @@
   gap: 16px;
 }
 
-.field__label {
+.field-label {
   display: block;
   font-size: 0.8125rem;
   font-weight: 600;
@@ -12,11 +12,11 @@
   margin-bottom: 6px;
 }
 
-.field__req {
+.field-req {
   color: var(--danger);
 }
 
-.field__input {
+.field-input {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid var(--border-color);
@@ -26,21 +26,21 @@
   background: var(--bg-card);
 }
 
-.field__input:focus {
+.field-input:focus {
   outline: none;
   border-color: var(--accent);
 }
 
-.field__input.has-error {
+.field-input.has-error {
   border-color: var(--danger);
 }
 
-.field__textarea {
+.field-textarea {
   resize: vertical;
   min-height: 72px;
 }
 
-.field__error {
+.field-error {
   display: block;
   font-size: 0.75rem;
   color: var(--danger);
@@ -53,7 +53,7 @@
   gap: 12px;
 }
 
-.task-form__actions {
+.task-form-actions {
   display: flex;
   justify-content: flex-end;
   gap: 12px;
@@ -66,11 +66,11 @@
     grid-template-columns: 1fr;
   }
 
-  .task-form__actions {
+  .task-form-actions {
     flex-direction: column-reverse;
   }
 
-  .task-form__actions .btn {
+  .task-form-actions .btn {
     width: 100%;
   }
 }

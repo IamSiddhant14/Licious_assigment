@@ -17,11 +17,11 @@ export function ConfirmDialog({
 }: ConfirmDialogProps) {
   return (
     <div className="confirm-dialog">
-      <h3 className="confirm-dialog__title">{title}</h3>
-      <p className="confirm-dialog__msg">{message}</p>
-      <div className="confirm-dialog__actions">
-        <button className="btn btn--secondary" onClick={onCancel}>Cancel</button>
-        <button className="btn btn--danger" onClick={onConfirm}>{confirmLabel}</button>
+      <h3 className="confirm-dialog-title">{title}</h3>
+      <p className="confirm-dialog-msg">{message}</p>
+      <div className="confirm-dialog-actions">
+        <button className="btn btn-secondary" onClick={onCancel}>Cancel</button>
+        <button className="btn btn-danger" onClick={onConfirm}>{confirmLabel}</button>
       </div>
     </div>
   );

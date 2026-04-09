@@ -10,20 +10,19 @@ export function TaskStats({ tasks }: TaskStatsProps) {
   const completed = tasks.filter((t) => t.status === 'completed').length;
   const pending = total - completed;
 
-
   return (
     <div className="task-stats">
       <div className="stat-cards">
         <div className="stat-card">
-          <span className="stat-card__value">{total}</span>
+          <span className="stat-card-value">{total}</span>
           <span>Total</span>
         </div>
         <div className="stat-card">
-          <span className="stat-card__value">{pending}</span>
+          <span className="stat-card-value">{pending}</span>
           <span>Pending</span>
         </div>
         <div className="stat-card">
-          <span className="stat-card__value">{completed}</span>
+          <span className="stat-card-value">{completed}</span>
           <span>Completed</span>
         </div>
       </div>

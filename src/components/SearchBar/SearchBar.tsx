@@ -10,13 +10,13 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
     <div className="search-bar">
       <input
         type="text"
-        className="search-bar__input"
+        className="search-bar-input"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder="Search "
       />
       {value && (
-        <button className="search-bar__clear" onClick={() => onChange('')}>×</button>
+        <button className="search-bar-clear" onClick={() => onChange('')}>×</button>
       )}
     </div>
   );
